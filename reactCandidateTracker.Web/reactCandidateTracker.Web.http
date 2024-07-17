@@ -1,0 +1,6 @@
+@reactCandidateTracker.Web_HostAddress = http://localhost:5059
+
+GET {{reactCandidateTracker.Web_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
