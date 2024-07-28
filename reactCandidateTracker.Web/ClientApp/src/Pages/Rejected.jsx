@@ -46,6 +46,7 @@ const Rejected = () => {
                             <td>{c.firstName}</td>
                             <td>{c.lastName}</td>
                             <td>{c.phoneNumber}</td>
+                            <td>{c.notes}</td>
                             {toggleNotes && <td>{c.notes}</td>}
                         </tr>)
                     }

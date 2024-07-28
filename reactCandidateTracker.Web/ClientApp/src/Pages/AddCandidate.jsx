@@ -35,19 +35,19 @@ const AddCandidate = () => {
                 <div className="col-md-6 offset-md-3">
                     <div className="card card-body bg-light">
                         <h4>Add Candidate</h4>
-                        <form>
-                            <input type="text" onChange={e => setFirstName(e.target.value)} name="firstName" placeholder="First Name" className="form-control" />
+                       
+                            <input type="text" onChange={e => setFirstName(e.target.value)} name="firstName" placeholder="First Name"  />
                             <br />
-                            <input type="text" onChange={e => setLastName(e.target.value)} name="lastName" placeholder="Last Name" className="form-control" />
+                            <input type="text" onChange={e => setLastName(e.target.value)} name="lastName" placeholder="Last Name"  />
                             <br />
-                            <input type="text" onChange={e => setEmail(e.target.value)} name="email" placeholder="Email" className="form-control" />
+                            <input type="text" onChange={e => setEmail(e.target.value)} name="email" placeholder="Email"  />
                             <br />
-                            <input type="text" onChange={e => setPhoneNumber(e.target.value)} name="phoneNumber" placeholder="Phone Number" className="form-control" />
+                            <input type="text" onChange={e => setPhoneNumber(e.target.value)} name="phoneNumber" placeholder="Phone Number"/>
                             <br />
-                            <textarea rows="5" onChange={e => setNotes(e.target.value)} className="form-control" name="Notes"></textarea>
+                            <textarea rows="5" onChange={e => setNotes(e.target.value)} name="Notes"></textarea>
                             <br />
                             <button className="btn btn-primary" disabled={!isValid} onClick={onSubmitClick}>{isSubmitting ? "Submitting..." : "Submit"}</button>
-                        </form>
+                      
                     </div>
                 </div>
             </div>
